@@ -30,13 +30,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         simpleTimer_ViewModel.remainingTime.observe(this) { remainingSeconds ->
-            if(remainingSeconds != -1L) {
+            if(remainingSeconds == 0L){
+                binding?.mainTvShowing?.text = "Hit below button to start!!"
+            } else if(remainingSeconds != -1L) {
                 binding?.mainTvShowing?.text = "The remaining seconds: $remainingSeconds"
             } else {
                 binding?.mainTvShowing?.text = "Timer is cancelled!!"
-
             }
         }
+
+        binding?.mainTvTitle?.text = "Main Activity in " +
+                "${simpleTimer_ViewModel.getAppName().toString().uppercase()}"
 
 
     }
