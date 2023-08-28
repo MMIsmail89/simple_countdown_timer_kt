@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/main_tv_title"
+        android:id="@+id/act_two_tv_title"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/main_tv_showing"
+        android:id="@+id/act_two_tv_showing"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
@@ -38,10 +38,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/act_two_tv_title" />
 
     <Button
-        android:id="@+id/main_btn_startTimer"
+        android:id="@+id/act_two_btn_startTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Step Down Timer"
@@ -52,10 +52,10 @@
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_tv_showing" />
+        app:layout_constraintTop_toBottomOf="@+id/act_two_tv_showing" />
 
     <Button
-        android:id="@+id/main_btn_stopTimer"
+        android:id="@+id/act_two_btn_stopTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stop Timer"
@@ -66,13 +66,14 @@
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_btn_startTimer" />
+        app:layout_constraintTop_toBottomOf="@+id/act_two_btn_startTimer" />
 
     <Button
-        android:id="@+id/main_btn_next"
+        android:id="@+id/act_two_btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next Activity"
+
+        android:text="Return"
 
         android:gravity="center_horizontal|center_vertical"
         android:foregroundGravity="center"
@@ -80,6 +81,6 @@
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_btn_stopTimer" />
+        app:layout_constraintTop_toBottomOf="@+id/act_two_btn_stopTimer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

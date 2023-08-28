@@ -1,5 +1,6 @@
 package com.example.simplecountdowntimer
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         simpleTimer_ViewModel = ViewModelProvider(this).get(simpleTimerViewModel::class.java)
 
         binding?.mainBtnStartTimer?.setOnClickListener {
-            val seconds = 300L // 5 minutes
+            val seconds = 60L // 5 minutes
             simpleTimer_ViewModel.startTimer(seconds)
         }
 
@@ -42,6 +43,18 @@ class MainActivity : AppCompatActivity() {
         binding?.mainTvTitle?.text = "Main Activity in " +
                 "${simpleTimer_ViewModel.getAppName().toString().uppercase()}"
 
+        //
+         binding?.mainBtnNext?.setOnClickListener {
+             Intent(this, ActivityTwo::class.java).also {
+                 startActivity(it)
+             }
+         }
 
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding  = null
     }
 }
