@@ -1,5 +1,6 @@
 package com.example.simplecountdowntimer
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
@@ -58,6 +59,12 @@ class ActivityTwo : AppCompatActivity() {
         binding?.actTwoBtnBack?.setOnClickListener {
             finish()
         }
+        binding?.actTwoBtnNextActivity?.setOnClickListener {
+            Intent(this@ActivityTwo, ActivityThree::class.java).also {
+                startActivity(it)
+            }
+        }
+
         //
 
 

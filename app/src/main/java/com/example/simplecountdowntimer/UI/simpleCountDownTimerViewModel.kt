@@ -111,6 +111,3 @@ class simpleCountDownTimerViewModel(private val app: Application) : AndroidViewM
 
 }
 
-// ---------------------
-
-// ---------------------

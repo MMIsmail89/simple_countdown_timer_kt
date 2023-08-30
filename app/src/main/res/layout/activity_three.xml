@@ -7,14 +7,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/act_two_tv_title"
+        android:id="@+id/act_three_tv_title"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
 
         android:layout_marginTop="35sp"
 
-        android:text="App Name"
+        android:text="Hello @ Activity Three - Alarm Manager"
         android:gravity="center_horizontal|center_vertical"
         android:foregroundGravity="center"
 
@@ -24,27 +24,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/act_two_tv_showing"
+        android:id="@+id/act_three_tv_current_time"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
 
         android:layout_marginTop="35sp"
 
-        android:text="0"
+        android:text="8 : 45 PM"
         android:gravity="center_horizontal|center_vertical"
         android:foregroundGravity="center"
 
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/act_two_tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/act_three_tv_title" />
 
     <Button
-        android:id="@+id/act_two_btn_startTimer"
+        android:id="@+id/act_three_btn_selectTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Step Down Timer"
+        android:text="Select Time"
 
         android:gravity="center_horizontal|center_vertical"
         android:foregroundGravity="center"
@@ -52,13 +52,13 @@
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/act_two_tv_showing" />
+        app:layout_constraintTop_toBottomOf="@+id/act_three_tv_current_time" />
 
     <Button
-        android:id="@+id/act_two_btn_stopTimer"
+        android:id="@+id/act_three_btn_setAlarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop Timer"
+        android:text="Set Alarm"
 
         android:gravity="center_horizontal|center_vertical"
         android:foregroundGravity="center"
@@ -66,25 +66,41 @@
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/act_two_btn_startTimer" />
+        app:layout_constraintTop_toBottomOf="@+id/act_three_btn_selectTime" />
 
     <Button
-        android:id="@+id/act_two_btn_nextActivity"
+        android:id="@+id/act_three_btn_cancelAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Alarm"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:foregroundGravity="center"
+
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act_three_btn_setAlarm" />
+
+    <Button
+        android:id="@+id/act_three_btn_nextActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:text="Next Activity"
 
+        android:visibility="invisible"
+
         android:gravity="center_horizontal|center_vertical"
         android:foregroundGravity="center"
 
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/act_two_btn_stopTimer" />
+        app:layout_constraintTop_toBottomOf="@+id/act_three_btn_cancelAlarm" />
 
     <Button
-        android:id="@+id/act_two_btn_back"
+        android:id="@+id/act_three_btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -96,6 +112,6 @@
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/act_two_btn_nextActivity" />
+        app:layout_constraintTop_toBottomOf="@+id/act_three_btn_nextActivity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
