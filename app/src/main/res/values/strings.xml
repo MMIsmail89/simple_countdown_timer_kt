@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">simple countdown timer</string>
+
+    <string name="channel_ID_KEY">prayAlarmTimer</string>
+
+    <string name="title_notification">منبه الصلاة</string>
+    <string name="message_notification">قال الله تعالى في القرآن الكريم: "حَافِظُوا عَلَى الصَّلَوَاتِ وَالصَّلَاةِ الْوُسْطَىٰ وَقُومُوا لِلَّهِ قَانِتِينَ"، مما يؤكد على أهمية أداء الصلاة.</string>
+
 </resources>
